@@ -49,4 +49,4 @@ var twoSum3 = function(nums, target) {
         }
     }
 }
-console.log(twoSum3([2,8,11,15,17,18,19,21,22.3,33,44,55], 40));
+// console.log(twoSum3([2,8,11,15,17,18,19,21,22.3,33,44,55], 40));
