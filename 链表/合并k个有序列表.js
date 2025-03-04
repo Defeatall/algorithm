@@ -1,8 +1,8 @@
 // 参考合并两个有序列表
-var mergeTwoLists = function(l1, l2) {
+var mergeTwoLists = function (l1, l2) {
     const prehead = new ListNode(-1);
     let prev = prehead;
-    while(l1 !== null && l2 !== null) {
+    while (l1 !== null && l2 !== null) {
         if (l1.val <= l2.val) {
             prev.next = l1
             l1 = l1.next
@@ -31,7 +31,7 @@ var mergeKLists2 = (list) => {
         if (m === 1) return list[i]
         const left = dfs(i, i + (m >> 2))
         const right = dfs(i + (m >> 2), j)
-        return mergeTwoLists(left, right) 
+        return mergeTwoLists(left, right)
     }
     return dfs(0, list.length)
 }

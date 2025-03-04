@@ -1,10 +1,1 @@
-// 示例 1：
-
-// 输入：s = "babad"
-// 输出："bab"
-// 解释："aba" 同样是符合题意的答案。
-// 示例 2：
-
-// 输入：s = "cbbd"
-// 输出："bb"
-
+[{ "colName": "受灾人口", "colType": 2, "colUnit": "人" }, { "colName": "因灾死亡人口", "colType": 2, "colUnit": "人" }, { "colName": "农作物绝收面积", "colType": 2, "colUnit": "公顷" }, { "colName": "需紧急生活救助人口", "colType": 2, "colUnit": "人" }, { "colName": "受淹车辆", "colType": 2, "colUnit": "辆" }, { "colName": "因灾失踪人口", "colType": 2, "colUnit": "人" }, { "colName": "因灾伤病人口", "colType": 2, "colUnit": "人" }, { "colName": "农作物成灾面积", "colType": 2, "colUnit": "公顷" }, { "colName": "倒塌房屋间数", "colType": 2, "colUnit": "间" }, { "colName": "倒塌房屋户数", "colType": 2, "colUnit": "户" }, { "colName": "严重损害房屋间数", "colType": 2, "colUnit": "间" }, { "colName": "严重损坏房屋户数", "colType": 2, "colUnit": "户" }, { "colName": "一般损坏房屋间数", "colType": 2, "colUnit": "间" }, { "colName": "基础设施损失", "colType": 2, "colUnit": "万元" }, { "colName": "公共服务损失", "colType": 2, "colUnit": "万元" }, { "colName": "住房及家庭财产损失", "colType": 2, "colUnit": "万元" }, { "colName": "需过渡性救助人口", "colType": 2, "colUnit": "人" }, { "colName": "分散安置人口", "colType": 2, "colUnit": "人" }, { "colName": "紧急转移人口", "colType": 2, "colUnit": "人" }, { "colName": "农作物受灾面积", "colType": 2, "colUnit": "公顷" }, { "colName": "集中安置人口", "colType": 2, "colUnit": "人" }, { "colName": "一般损坏房屋户数", "colType": 2, "colUnit": "户" }, { "colName": "直接经济损失", "colType": 2, "colUnit": "万元" }, { "colName": "农林牧渔业损失", "colType": 2, "colUnit": "万元" }, { "colName": "其他损失", "colType": 2, "colUnit": "万元" }, { "colName": "工矿商贸业损失", "colType": 2, "colUnit": "万元" }, { "colName": "倒塌房屋间数", "colType": 2, "colUnit": "间" }]

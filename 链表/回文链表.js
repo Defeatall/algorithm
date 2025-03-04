@@ -22,9 +22,9 @@
 // 方法一：将链表值复制到数组中后，用双指针法
 // 时间复杂度分析：加入vals数组O(n)，遍历O(n/2)即O(n)，加起来O(2n)即O(n)
 // 空间复杂度分析：存在数组中O(n)
-var isPalindrome1 = function(head) {
+var isPalindrome1 = function (head) {
     const vals = []
-    while(head !== null) {
+    while (head !== null) {
         vals.push(head)
         head = head.next
     }
@@ -33,23 +33,28 @@ var isPalindrome1 = function(head) {
     }
     return true
 };
-
 // 方法二：利用链表的后续遍历，使用函数调用栈作为后续遍历栈来判断是否回文。
 let frontPointer;
 
 const recursivelyCheck = (currentNode) => { // 执行则进栈
     if (currentNode !== null) {
         if (!recursivelyCheck(currentNode.next)) return false // 出栈
-        if (currentNode.val !== frontPointer.val ) return false // 出栈
+        if (currentNode.val !== frontPointer.val) return false // 出栈
         frontPointer = currentNode.next
     }
     return true
 }
-var isPalindrome2 = function(head) {
+var isPalindrome2 = function (head) {
     frontPointer = head
     return recursivelyCheck(head)
 };
 
+let frontPointer;
+const recursivelyCheck = (currentNode) => {
+    if (currentNode !== null) {
+        if (!)
+    }
+}
 // 方法三：用快慢指针遍历
 /*
 1.找到前半部分链表的尾节点。
@@ -62,7 +67,7 @@ var isPalindrome2 = function(head) {
 const reverseList = (head) => {
     let prev = null;
     let curr = head;
-    while(curr !== null) {
+    while (curr !== null) {
         let nextTemp = curr.next
         curr.next = prev
         prev = curr
@@ -74,7 +79,7 @@ const reverseList = (head) => {
 const endOfFirstHalf = (head) => {
     let fast = head
     let slow = head
-    while(fast.next !== null && fast.next.next !== null) {
+    while (fast.next !== null && fast.next.next !== null) {
         fast = fast.next.next
         slow = slow.next
     }
