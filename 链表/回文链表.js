@@ -49,12 +49,6 @@ var isPalindrome2 = function (head) {
     return recursivelyCheck(head)
 };
 
-let frontPointer;
-const recursivelyCheck = (currentNode) => {
-    if (currentNode !== null) {
-        if (!)
-    }
-}
 // 方法三：用快慢指针遍历
 /*
 1.找到前半部分链表的尾节点。
