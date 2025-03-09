@@ -1,6 +1,6 @@
 // main.js
 console.log(require('./a.js')); // 导出对象   { counter: 3, incCounter: [Function: incCounter] } 第一次require就把该对象缓存起来了
-
+console.log(require('./b.js')); // {xxx: 'exports.xxx'}  即使是exports.xxx，引入的时候也是对象
 var counter = require('./a.js').counter;
 var incCounter = require('./a.js').incCounter;
 

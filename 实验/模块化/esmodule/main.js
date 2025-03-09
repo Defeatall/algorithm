@@ -9,6 +9,8 @@ console.log(counter2);
 incCounter2();
 console.log(counter2);
 
+import customName from './c.js' // export default可以自定义名字
+console.log(customName);
 
 
 
