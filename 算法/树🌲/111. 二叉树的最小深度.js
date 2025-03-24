@@ -24,9 +24,9 @@ const minDepth = (root) => {
     if (root.left && root.right) {
         return 1 + Math.min(minDepth(root.left), minDepth(root.right))
     } else if (root.left) {
-        return 1 + Math.min(root.left)
+        return 1 + minDepth(root.left)
     } else if (root.right) {
-        return 1 + Math.min(root.right)
+        return 1 + minDepth(root.right)
     } else {
         return 1
     }
@@ -39,10 +39,10 @@ const minDepthBFC = (root) => {
     let depth = 1
     while (queue.length) {
         const levelSize = queue.length;
-        for(let i = 0; i<levelSize; i++) {
+        for (let i = 0; i < levelSize; i++) {
             const cur = queue.shift()
             if (cur.left == null && cur.right == null) return depth
-            if(cur.left) queue.push(cur.left)
+            if (cur.left) queue.push(cur.left)
             if (cur.right) queue.push(cur.right)
         }
         depth++
