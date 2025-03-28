@@ -10,23 +10,23 @@
  * @param {number[]} nums
  * @return {number}
  */
-// 方法一：快慢指针
-var removeDuplicates = function(nums) {
+// 方法一：快慢指针(一句话:fast正常速度遍历，当遍历到的数比前一个数大的时候，slow才加一，多少个递增的数slow就是多少)
+var removeDuplicates = function (nums) {
     if (nums.length == 0) return 0
     let slow = 1
     let fast = 1
-    while(fast < nums.length) {
+    while (fast < nums.length) {
         if (nums[fast] > nums[fast - 1]) {
             nums[slow] = nums[fast]
-            slow ++
+            slow++
         }
-        fast ++
+        fast++
     }
-    console.log(slow, nums);    
+    console.log(slow, nums);
     return slow
 };
 
-removeDuplicates([0,0,1,1,1,2,2,3,3,4])
+removeDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4])
 
 // slow1 fast1 
 // slow1 fast2

@@ -27,5 +27,18 @@
  * @return {boolean}
  */
 var isPalindrome = function (x) {
-
+    if (x < 0) return false
+    return reverse(x) === x
+};
+var reverse = function (x) {
+    let rev = 0
+    while (x != 0) {
+        let final = x % 10
+        x = ~~(x / 10)
+        rev = rev * 10 + final
+        if (rev < Math.pow(-2, 31) || rev > Math.pow(2, 31) - 1) {
+            return 0
+        }
+    }
+    return rev
 };
